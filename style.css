@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+ /*  ### Primary */
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+
+/*   ### Neutral */
+--transparent-white: hsla(0, 0%, 100%, 0.75);
+--very-light-gray: hsl(0, 0%, 95%);
+}
+
+html {
+    font: 10px;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+    color: var(--very-light-gray);
+}
+
+.card-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 330px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.car-type {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;    
+    flex-direction: column;
+    padding: 3rem;
+    
+}
+
+.car-type:first-child {
+    background-color: var(--bright-orange);
+}
+.car-type:nth-child(2) {
+    background-color: var(--dark-cyan);
+}
+.car-type:last-child {
+    background-color: var(--very-dark-cyan);
+}
+
+.car-type img {
+    margin-bottom: 1.2rem;
+}
+.car-type h2 {
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    margin: 1rem 0 .5rem 0;
+
+}
+
+.car-type p {
+    color: var(--transparent-white);
+    font-size: .95rem;
+    margin-bottom: .5rem;
+    line-height: 1.6rem;
+}
+
+.car-type a{
+    font-size: .95rem;
+    padding: .95em 1.8em;
+    border-radius: 2rem;
+    background-color: var(--very-light-gray);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.car-type:first-child a {
+    color: var(--bright-orange);
+}
+
+.car-type:first-child a:focus, .car-type:first-child a:hover {
+    background-color: var(--bright-orange);
+}
+.car-type:nth-child(2) a {
+    color: var(--dark-cyan);
+}
+
+.car-type:nth-child(2) a:focus, .car-type:nth-child(2) a:hover {
+    background-color: var(--dark-cyan);
+}
+.car-type:last-child a {
+    color: var(--very-dark-cyan);
+}
+
+.car-type:last-child a:focus,.car-type:last-child a:hover {
+    background-color: var(--very-dark-cyan);
+}
+
+.car-type a:focus, .car-type a:hover{
+    color: var(--very-light-gray);
+    border:2px solid var(--very-light-gray); 
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        max-width: 65%;
+    }
+    .car-type img {
+        border-bottom: 1.5rem;
+    }
+    .car-type p {
+        margin-bottom: 5.2rem;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
