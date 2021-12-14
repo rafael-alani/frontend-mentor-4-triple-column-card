@@ -120,6 +120,9 @@ body {
 }
 
 @media (min-width: 768px) {
+    .card-wrapper {
+        height: 100vh;
+    }
     .card {
         flex-direction: row;
         max-width: 65%;
